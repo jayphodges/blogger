@@ -3,9 +3,16 @@
 <ul id="articles">
   <% @articles.each do |article| %>
     <li>
+<<<<<<< HEAD
       <%= link_to article.title, article_path(article), class: 'article_title' %>
     </li>
   <% end %>
 </ul>
 
 <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+=======
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>
+>>>>>>> article-index-view
